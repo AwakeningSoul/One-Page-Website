@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/one_page_website.css">
+  <title>Photography Wildlife</title>
+</head>
+<body>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#pictures">Pictures</a>
+    <a href="#contact">Contact</a>
+    <a href="#videos">Video(s)</a>
+  </nav>
+
+  <section id="home">
+    <h1>Explore the Beauty of the Wildlife</h1>
+    <p>Welcome to our small group of people who enjoy the beauty of wildlife!</p>
+  </section>
+
+  <section id="pictures">
+    <h2>Travel Pictures</h2>
+    <div class="row">
+      <div class="column">
+        <img src="./images/pictures/picture3.jpg" alt="Elephants" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./images/pictures/picture_1.jpg" alt="Whale" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+    </div>
+  </section>
+
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+      <div class="mySlides">
+        <div class="numbertext">1 / 2</div>
+        <img src="./images/pictures/picture3.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">2 / 2</div>
+        <img src="./images/pictures/picture_1.jpg" style="width:100%">
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <form action="#" method="post">
+      <input type="text" name="firstname" placeholder="First Name">
+      <input type="text" name="lastname" placeholder="Last Name">
+      <input type="email" name="email" placeholder="Email Address">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <section id="videos">
+    <h2>Travel Videos</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/RpuXOdnEuos?si=vL3DFbnG4g32yLwD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Travel Wildlife</p>
+    <p>Follow us on <a href="https://twitter.com/example">Twitter</a> | Connect on <a href="https://facebook.com/example">Facebook</a></p>
+    <p>Explore the world through our friendly world.</p>
+  </footer>
+
+  <script src="js/one_page_website.js"></script>
+</body>
+</html>
